@@ -6,10 +6,9 @@ LOCAL_C_FLAGS += -DPLATFORM_MSM8996
 
 LOCAL_C_INCLUDES += \
      $(call project-path-for,qcom-audio)/hal/msm8974/ \
-     $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include \
      hardware/libhardware/include
 
-LOCAL_ADDITIONAL_DEPENDENCIES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
+LOCAL_HEADER_LIBRARIES := generated_kernel_headers
 
 LOCAL_SHARED_LIBRARIES := liblog libutils libcutils libdl
 
