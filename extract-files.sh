@@ -87,6 +87,10 @@ function blob_fixup() {
     vendor/lib64/libril-qc-qmi-1.so)
         sed -i 's|\xfc\x0f\x1e\xf8\xfd\x7b\x01\xa9|\x00\x00\x80\xd2\xc0\x03\x5f\xd6|' "${2}"
         ;;
+    # Hex edit libaudcal.so to store acdbdata in new paths
+    vendor/lib/libaudcal.so|vendor/lib64/libaudcal.so)
+        sed -i "s|/data/vendor/misc/audio/acdbdata/delta/|/data/vendor/audio/acdbdata/delta/\x00\x00\x00\x00\x00|g" "${2}"
+        ;;
     # Fix soname for Vulkan libraries
     vendor/lib/hw/vulkan.msm8996.so|vendor/lib64/hw/vulkan.msm8996.so)
         patchelf --set-soname "vulkan.msm8996.so" "${2}"
