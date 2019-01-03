@@ -1,2 +1,4 @@
+allow init sysfs_leds:lnk_file r_file_perms;
+
 # Allow init to bind mount loader config for media swcodec
 allow init system_file:file mounton;
