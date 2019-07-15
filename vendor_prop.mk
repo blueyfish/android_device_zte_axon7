@@ -54,6 +54,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.stats.test=5 \
     persist.vendor.camera.video.ubwc=0
 
+# Charger
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.charger.enable_suspend=true
+
 # CNE
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.cne.feature=1
