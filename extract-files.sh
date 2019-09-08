@@ -67,6 +67,13 @@ function blob_fixup() {
     vendor/lib64/lib-uceservice.so)
         patchelf --add-needed "libbase_shim.so" "${2}"
         ;;
+    # Shim libui GraphicBuffer lock functions
+    vendor/lib/libZEffectLib.so)
+        patchelf --add-needed "libui_shim.so" "${2}"
+        ;;
+    vendor/lib/libFNVfbEngineHAL.so)
+        patchelf --add-needed "libui_shim.so" "${2}"
+        ;;
     # Patch fingerprint blobs for VNDK
     vendor/bin/gx_fpd)
         patchelf --remove-needed "libunwind.so" "${2}"
