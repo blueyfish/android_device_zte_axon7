@@ -57,6 +57,10 @@ function blob_fixup() {
     vendor/lib64/vendor.qti.gnss@1.0_vendor.so)
         patchelf --replace-needed "android.hardware.gnss@1.0.so" "android.hardware.gnss@1.0-v27.so" "${2}"
         ;;
+    # Make QTI BT HAL load with VNDK 28 libbase
+    vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so)
+        patchelf --replace-needed "libbase.so" "libbase-v28.so" "${2}"
+        ;;
     esac
 }
 
