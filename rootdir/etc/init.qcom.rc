@@ -546,3 +546,6 @@ service gx_fpd /vendor/bin/gx_fpd
     user system
     group system
     writepid /dev/cpuset/system-background/tasks
+
+on property:apexd.status=ready
+    mount none /system/etc/swcodec/ld.config.txt /apex/com.android.media.swcodec/etc/ld.config.txt bind
