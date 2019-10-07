@@ -99,6 +99,34 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/i2c-6                0660   system     audio
 /dev/avtimer              0660   system     audio
 
+# sensors
+/dev/sensors              0660   system     system
+/sys/devices/i2c-12/12-*  pollrate_ms 0664 system system
+/sys/devices/f9925000.i2c/i2c-0/0-*                 enable         0660    input    system
+/sys/devices/f9925000.i2c/i2c-0/0-*                 poll_delay     0660    input    system
+/sys/devices/soc.0/78b6000.i2c/i2c-0/0-*            enable         0660    input    system
+/sys/devices/soc.0/78b6000.i2c/i2c-0/0-*            poll_delay     0660    input    system
+/sys/devices/soc.0/78b6000.i2c/i2c-0/0-*            enable_wakeup  0660    input    system
+/sys/devices/soc.0/78b6000.i2c/i2c-0/0-*            max_latency    0660    input    system
+/sys/devices/soc.0/78b6000.i2c/i2c-0/0-*            flush          0660    input    system
+/sys/devices/soc.0/78b6000.i2c/i2c-0/0-*            calibrate      0660    input    system
+/sys/devices/soc.0/78b5000.i2c/i2c-1/1-*            enable         0660    input    system
+/sys/devices/soc.0/78b5000.i2c/i2c-1/1-*            poll_delay     0660    input    system
+/sys/devices/soc.0/78b5000.i2c/i2c-1/1-*            enable_wakeup  0660    input    system
+/sys/devices/soc.0/78b5000.i2c/i2c-1/1-*            max_latency    0660    input    system
+/sys/devices/soc.0/78b5000.i2c/i2c-1/1-*            flush          0660    input    system
+/sys/devices/soc.0/78b5000.i2c/i2c-1/1-*            calibrate      0660    input    system
+/sys/devices/virtual/optical_sensors/proximity      ps_adc         0660    input    system
+/sys/devices/virtual/optical_sensors/proximity      ps_poll_delay  0660    input    system
+/sys/devices/virtual/optical_sensors/lightsensor    ls_auto        0660    input    system
+/sys/devices/virtual/optical_sensors/lightsensor    ls_poll_delay  0660    input    system
+/sys/devices/virtual/input/input*                   poll           0660    input    system
+/sys/devices/virtual/input/input*                   pollrate_ms    0660    input    system
+
+# laser sensor access
+/sys/devices/virtual/input/input*                   enable_ps_sensor 0660  system   system
+/sys/devices/virtual/input/input*                   set_delay_ms     0660  system   system
+
 # wlan
 /sys/devices/soc/600000.qcom,pcie/pci0000:00/0000:00:00.0/0000:01:00.0/net/wlan0/queues/rx-* rps_cpus 0660 system system
 /sys/devices/soc/600000.qcom,pcie/pci0000:00/0000:00:00.0/0000:01:00.0/net/p2p0/queues/rx-* rps_cpus 0660 system system
