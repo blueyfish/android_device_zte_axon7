@@ -716,7 +716,6 @@ vendor/lib64/libidl.so|bc1ec952c99fefc91bbcda7d812de30f055fcb7f
 vendor/lib64/libqcci_legacy.so|87af287dad40d414a3e6267cec6b29754d8a9604
 vendor/lib64/libqdi.so|84dbaefc90592dd515f000d163ad09f979651601
 vendor/lib64/libqdp.so|d43fd7db6dc6023faab62f21acc43f0bdc764781
-vendor/lib64/libqmi_cci.so|4bfbc1a549b224e6bafe2d0a4f70b10d2660a066
 vendor/lib64/libqmi_client_helper.so|10ca90569b6330473d4a28bd3c7d5534166c2fd6
 vendor/lib64/libqmi_client_qmux.so|28b51a709ab3b442082be2fa6bb0ac152ce9029d
 vendor/lib64/libqmi_common_so.so|19f99926237de7466cd48b0b255a6911b5536988
@@ -732,7 +731,6 @@ vendor/lib/libidl.so|85836dbc25c0cfa759c552057649c99ae494cbfd
 vendor/lib/libqcci_legacy.so|5003b6c3e8a19141b78d9b22099ef29d66e14b04
 vendor/lib/libqdi.so|124a425493562bd97a82a6b45418a36ea87e22a2
 vendor/lib/libqdp.so|3f6b454753335a1b4d6c91ad67a873311f5cb71c
-vendor/lib/libqmi_cci.so|c533f866ae2e203a90051896b5ba36af1b9a8c0d
 vendor/lib/libqmi_client_helper.so|fb30c9da9e6b50412fafb930cad525222cc87ade
 vendor/lib/libqmi_client_qmux.so|9881a1b4491dd0c0c674508081e9d2432eef107f
 vendor/lib/libqmi_common_so.so|c75d1bf5fdcb13e10b02f19572d45d14a1657e34
@@ -741,6 +739,10 @@ vendor/lib/libqmi_encdec.so|7f952f93350134ab1489e74d2e327afd8800af80
 vendor/lib/libqmiservices.so|a726fbed75d863d67206c8e027ad391140f4a488
 vendor/lib/libqmi.so|1d1dbf7dba981e620ea9d4cdc2336040ca085fca
 vendor/lib/libsmemlog.so|4e90311f07677be47af2c2df086c705fd9399ff9
+
+# QMI - from LA.UM.8.6.r1-01900-89xx.0
+vendor/lib/libqmi_cci.so|5a48201e565516a2fdff11c228162d2eda733fe5
+vendor/lib64/libqmi_cci.so|d5c4f4ad1a484fd00066b8f054877fc7dae77f8b
 
 # RIL - from fujisan - OPM1.171019.026
 # qti-telephony-common.jar - from daisy - PKQ1.180917.001
