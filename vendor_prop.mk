@@ -150,7 +150,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.carrier.openmarket=true \
     ro.telephony.call_ring.multiple=false \
     ro.telephony.default_cdma_sub=0 \
-    ro.telephony.default_network=10,10
+    ro.telephony.default_network=10,10 \
+    persist.sys.fflag.override.settings_network_and_internet_v2=true
 
 # RmNet Data
 PRODUCT_PROPERTY_OVERRIDES += \
