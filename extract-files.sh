@@ -83,6 +83,10 @@ function blob_fixup() {
         patchelf --remove-needed "libunwind.so" "${2}"
         patchelf --remove-needed "libbacktrace.so" "${2}"
         ;;
+    # Fix soname for Vulkan libraries
+    vendor/lib/hw/vulkan.msm8996.so|vendor/lib64/hw/vulkan.msm8996.so)
+        patchelf --set-soname "vulkan.msm8996.so" "${2}"
+        ;;
     esac
 }
 
