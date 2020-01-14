@@ -150,7 +150,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.carrier.openmarket=true \
     ro.telephony.call_ring.multiple=false \
     ro.telephony.default_cdma_sub=0 \
-    ro.telephony.default_network=10,10
+    ro.telephony.default_network=10,10 \
+    ro.telephony.use_old_mnc_mcc_format=true
 
 # RmNet Data
 PRODUCT_PROPERTY_OVERRIDES += \
