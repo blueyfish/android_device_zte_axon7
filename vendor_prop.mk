@@ -151,6 +151,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.call_ring.multiple=false \
     ro.telephony.default_cdma_sub=0 \
     ro.telephony.default_network=10,10 \
+    ro.telephony.use_old_mnc_mcc_format=true \
     persist.sys.fflag.override.settings_network_and_internet_v2=true
 
 # RmNet Data
