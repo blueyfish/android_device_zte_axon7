@@ -38,10 +38,10 @@ vendor/lib/rfsa/adsp/libvpp_svc_skel.so
 vendor/lib/rfsa/adsp/us-syncproximity.so
 
 # ANT+ (system) - from enchilada - PKQ1.180716.001
-lib64/com.qualcomm.qti.ant@1.0.so|199481b290856fb63f5c5bf6def426b43309becb
--lib64/libantradio.so|fb958cb68c99c71455f969afdf96225f5110f0df
-lib/com.qualcomm.qti.ant@1.0.so|fcd6a7130c480bfe4e4d9cc00702ed8444cddc82
--lib/libantradio.so|7506f2577f2f1068688b623ca85e432be9c3dac9
+system/lib64/com.qualcomm.qti.ant@1.0.so|199481b290856fb63f5c5bf6def426b43309becb
+-system/lib64/libantradio.so|fb958cb68c99c71455f969afdf96225f5110f0df
+system/lib/com.qualcomm.qti.ant@1.0.so|fcd6a7130c480bfe4e4d9cc00702ed8444cddc82
+-system/lib/libantradio.so|7506f2577f2f1068688b623ca85e432be9c3dac9
 
 # ANT+ (vendor)
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
@@ -80,48 +80,48 @@ vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 
 # Audio AKM Firmware
-etc/firmware/ak4961_aram_karaoke_spk.bin:vendor/firmware/ak4961_aram_karaoke_spk.bin
-etc/firmware/ak4961_cram_interview_record.bin:vendor/firmware/ak4961_cram_interview_record.bin
-etc/firmware/ak4961_cram_karaoke_cave.bin:vendor/firmware/ak4961_cram_karaoke_cave.bin
-etc/firmware/ak4961_cram_karaoke_cloister.bin:vendor/firmware/ak4961_cram_karaoke_cloister.bin
-etc/firmware/ak4961_cram_karaoke_heavy.bin:vendor/firmware/ak4961_cram_karaoke_heavy.bin
-etc/firmware/ak4961_cram_karaoke_light.bin:vendor/firmware/ak4961_cram_karaoke_light.bin
-etc/firmware/ak4961_cram_karaoke_live.bin:vendor/firmware/ak4961_cram_karaoke_live.bin
-etc/firmware/ak4961_cram_karaoke_middle.bin:vendor/firmware/ak4961_cram_karaoke_middle.bin
-etc/firmware/ak4961_cram_karaoke_room.bin:vendor/firmware/ak4961_cram_karaoke_room.bin
-etc/firmware/ak4961_cram_karaoke_spk_live.bin:vendor/firmware/ak4961_cram_karaoke_spk_live.bin
-etc/firmware/ak4961_cram_karaoke_spk_room.bin:vendor/firmware/ak4961_cram_karaoke_spk_room.bin
-etc/firmware/ak4961_cram_karaoke_spk_theater.bin:vendor/firmware/ak4961_cram_karaoke_spk_theater.bin
-etc/firmware/ak4961_cram_karaoke_theater.bin:vendor/firmware/ak4961_cram_karaoke_theater.bin
-etc/firmware/ak4961_cram_karaoke_valley.bin:vendor/firmware/ak4961_cram_karaoke_valley.bin
-etc/firmware/ak4961_cram_music_speaker.bin:vendor/firmware/ak4961_cram_music_speaker.bin
-etc/firmware/ak4961_cram_sound_record.bin:vendor/firmware/ak4961_cram_sound_record.bin
-etc/firmware/ak4961_cram_voice_recognition.bin:vendor/firmware/ak4961_cram_voice_recognition.bin
-etc/firmware/ak4961_cram_voice_record.bin:vendor/firmware/ak4961_cram_voice_record.bin
-etc/firmware/ak4961_cram_wchat_record.bin:vendor/firmware/ak4961_cram_wchat_record.bin
-etc/firmware/ak4961_cram_wide_hf.bin:vendor/firmware/ak4961_cram_wide_hf.bin
-etc/firmware/ak4961_cram_wide_hp.bin:vendor/firmware/ak4961_cram_wide_hp.bin
-etc/firmware/ak4961_cram_wide_hs.bin:vendor/firmware/ak4961_cram_wide_hs.bin
-etc/firmware/ak4961_oram_karaoke_heavy.bin:vendor/firmware/ak4961_oram_karaoke_heavy.bin
-etc/firmware/ak4961_oram_karaoke_light.bin:vendor/firmware/ak4961_oram_karaoke_light.bin
-etc/firmware/ak4961_oram_karaoke_middle.bin:vendor/firmware/ak4961_oram_karaoke_middle.bin
-etc/firmware/ak4961_pram_interview_record.bin:vendor/firmware/ak4961_pram_interview_record.bin
-etc/firmware/ak4961_pram_karaoke.bin:vendor/firmware/ak4961_pram_karaoke.bin
-etc/firmware/ak4961_pram_karaoke_spk.bin:vendor/firmware/ak4961_pram_karaoke_spk.bin
-etc/firmware/ak4961_pram_music_speaker.bin:vendor/firmware/ak4961_pram_music_speaker.bin
-etc/firmware/ak4961_pram_sound_record.bin:vendor/firmware/ak4961_pram_sound_record.bin
-etc/firmware/ak4961_pram_voice_recognition.bin:vendor/firmware/ak4961_pram_voice_recognition.bin
-etc/firmware/ak4961_pram_wide.bin:vendor/firmware/ak4961_pram_wide.bin
+system/etc/firmware/ak4961_aram_karaoke_spk.bin:vendor/firmware/ak4961_aram_karaoke_spk.bin
+system/etc/firmware/ak4961_cram_interview_record.bin:vendor/firmware/ak4961_cram_interview_record.bin
+system/etc/firmware/ak4961_cram_karaoke_cave.bin:vendor/firmware/ak4961_cram_karaoke_cave.bin
+system/etc/firmware/ak4961_cram_karaoke_cloister.bin:vendor/firmware/ak4961_cram_karaoke_cloister.bin
+system/etc/firmware/ak4961_cram_karaoke_heavy.bin:vendor/firmware/ak4961_cram_karaoke_heavy.bin
+system/etc/firmware/ak4961_cram_karaoke_light.bin:vendor/firmware/ak4961_cram_karaoke_light.bin
+system/etc/firmware/ak4961_cram_karaoke_live.bin:vendor/firmware/ak4961_cram_karaoke_live.bin
+system/etc/firmware/ak4961_cram_karaoke_middle.bin:vendor/firmware/ak4961_cram_karaoke_middle.bin
+system/etc/firmware/ak4961_cram_karaoke_room.bin:vendor/firmware/ak4961_cram_karaoke_room.bin
+system/etc/firmware/ak4961_cram_karaoke_spk_live.bin:vendor/firmware/ak4961_cram_karaoke_spk_live.bin
+system/etc/firmware/ak4961_cram_karaoke_spk_room.bin:vendor/firmware/ak4961_cram_karaoke_spk_room.bin
+system/etc/firmware/ak4961_cram_karaoke_spk_theater.bin:vendor/firmware/ak4961_cram_karaoke_spk_theater.bin
+system/etc/firmware/ak4961_cram_karaoke_theater.bin:vendor/firmware/ak4961_cram_karaoke_theater.bin
+system/etc/firmware/ak4961_cram_karaoke_valley.bin:vendor/firmware/ak4961_cram_karaoke_valley.bin
+system/etc/firmware/ak4961_cram_music_speaker.bin:vendor/firmware/ak4961_cram_music_speaker.bin
+system/etc/firmware/ak4961_cram_sound_record.bin:vendor/firmware/ak4961_cram_sound_record.bin
+system/etc/firmware/ak4961_cram_voice_recognition.bin:vendor/firmware/ak4961_cram_voice_recognition.bin
+system/etc/firmware/ak4961_cram_voice_record.bin:vendor/firmware/ak4961_cram_voice_record.bin
+system/etc/firmware/ak4961_cram_wchat_record.bin:vendor/firmware/ak4961_cram_wchat_record.bin
+system/etc/firmware/ak4961_cram_wide_hf.bin:vendor/firmware/ak4961_cram_wide_hf.bin
+system/etc/firmware/ak4961_cram_wide_hp.bin:vendor/firmware/ak4961_cram_wide_hp.bin
+system/etc/firmware/ak4961_cram_wide_hs.bin:vendor/firmware/ak4961_cram_wide_hs.bin
+system/etc/firmware/ak4961_oram_karaoke_heavy.bin:vendor/firmware/ak4961_oram_karaoke_heavy.bin
+system/etc/firmware/ak4961_oram_karaoke_light.bin:vendor/firmware/ak4961_oram_karaoke_light.bin
+system/etc/firmware/ak4961_oram_karaoke_middle.bin:vendor/firmware/ak4961_oram_karaoke_middle.bin
+system/etc/firmware/ak4961_pram_interview_record.bin:vendor/firmware/ak4961_pram_interview_record.bin
+system/etc/firmware/ak4961_pram_karaoke.bin:vendor/firmware/ak4961_pram_karaoke.bin
+system/etc/firmware/ak4961_pram_karaoke_spk.bin:vendor/firmware/ak4961_pram_karaoke_spk.bin
+system/etc/firmware/ak4961_pram_music_speaker.bin:vendor/firmware/ak4961_pram_music_speaker.bin
+system/etc/firmware/ak4961_pram_sound_record.bin:vendor/firmware/ak4961_pram_sound_record.bin
+system/etc/firmware/ak4961_pram_voice_recognition.bin:vendor/firmware/ak4961_pram_voice_recognition.bin
+system/etc/firmware/ak4961_pram_wide.bin:vendor/firmware/ak4961_pram_wide.bin
 
 # Audio NXP
-etc/settings/mono_qcom_rcv.cnt:vendor/etc/tfa/mono_qc_rcv.cnt
-etc/settings/mono_qcom_spk_l.cnt:vendor/etc/tfa/mono_qc_spk_l.cnt
-etc/settings/mono_qcom_spk_r.cnt:vendor/etc/tfa/mono_qc_spk_r.cnt
-etc/settings/stereo_qcom_spk.cnt:vendor/etc/tfa/stereo_qc_spk.cnt
-etc/settings/stereo_qcom_spk_l.cnt:vendor/etc/tfa/stereo_qc_spk_l.cnt
-etc/settings/stereo_qcom_spk_r.cnt:vendor/etc/tfa/stereo_qc_spk_r.cnt
-lib64/libtfa9890.so:vendor/lib64/libtfa9890.so
-lib/libtfa9890.so:vendor/lib/libtfa9890.so
+system/etc/settings/mono_qcom_rcv.cnt:vendor/etc/tfa/mono_qc_rcv.cnt
+system/etc/settings/mono_qcom_spk_l.cnt:vendor/etc/tfa/mono_qc_spk_l.cnt
+system/etc/settings/mono_qcom_spk_r.cnt:vendor/etc/tfa/mono_qc_spk_r.cnt
+system/etc/settings/stereo_qcom_spk.cnt:vendor/etc/tfa/stereo_qc_spk.cnt
+system/etc/settings/stereo_qcom_spk_l.cnt:vendor/etc/tfa/stereo_qc_spk_l.cnt
+system/etc/settings/stereo_qcom_spk_r.cnt:vendor/etc/tfa/stereo_qc_spk_r.cnt
+system/lib64/libtfa9890.so:vendor/lib64/libtfa9890.so
+system/lib/libtfa9890.so:vendor/lib/libtfa9890.so
 
 # Bluetooth - from daisy - QP1A.190711.020
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|378ad8ce95651b4bf81ad73aaffbdf0666c55432
@@ -143,7 +143,7 @@ vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|76134fb75ff99948e0
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|7cdd376b08b8571e51674e0e61607c6a52a5a24a
 
 # Camera
-lib/libtrueportrait.so:vendor/lib/libtrueportrait.so
+system/lib/libtrueportrait.so:vendor/lib/libtrueportrait.so
 vendor/bin/mm-qcamera-daemon
 vendor/etc/camera/beautiful_fn/fn_default.xml
 vendor/etc/camera/beautiful_fn/fn_ov8856.xml
@@ -391,9 +391,9 @@ vendor/lib/libmmcamera_isp_snr47.so
 vendor/lib/libmmcamera_isp_sub_module.so
 
 # CNE - from LA.UM.8.6.r1-01900-89xx.0
-etc/cne/Nexus/ATT/ATT_profiles.xml|33e568627fd3f94dc45bca1c01ad10e6d8fb5b52
-etc/cne/Nexus/ROW/ROW_profiles.xml|238e785e9674b27c4b2365958d127533d7293132
-etc/cne/Nexus/VZW/VZW_profiles.xml|0f63b632e3a3f114def7aeadaabd13851c8ceec5
+system/etc/cne/Nexus/ATT/ATT_profiles.xml|33e568627fd3f94dc45bca1c01ad10e6d8fb5b52
+system/etc/cne/Nexus/ROW/ROW_profiles.xml|238e785e9674b27c4b2365958d127533d7293132
+system/etc/cne/Nexus/VZW/VZW_profiles.xml|0f63b632e3a3f114def7aeadaabd13851c8ceec5
 product/lib64/com.quicinc.cne.api@1.0.so|18c1b6e0330d0a87a2440fd0cc17bfba6041c6c7
 product/lib64/com.quicinc.cne.api@1.1.so|33dd5602bf97a1b3012059affa03e30370f5ea50
 product/lib64/com.quicinc.cne.constants@1.0.so|1d8d3a645ae79df79d15241fb7530abbf312f6ba
@@ -492,11 +492,11 @@ vendor/lib64/hw/gatekeeper.msm8996.so
 vendor/lib/hw/gatekeeper.msm8996.so
 
 # GPS - from daisy - PKQ1.180917.001
-lib64/vendor.qti.gnss@1.0.so|90b465adc4542f16fbdd935d0592df73d778909b
-lib64/vendor.qti.gnss@1.1.so|1edcf36fc3afbc465e53e3b74f99fde1e952f718
-lib64/vendor.qti.gnss@1.2.so|fc002fdced5768ed97936fde007476c1e9eaabb2
-lib64/vendor.qti.gnss@2.0.so|58e69a003eb530cf59bbe204251b9652d28a4b89
-lib64/vendor.qti.gnss@2.1.so|e7d80a2a46bcda7445d21701ba94983a43ab46af
+system/lib64/vendor.qti.gnss@1.0.so|90b465adc4542f16fbdd935d0592df73d778909b
+system/lib64/vendor.qti.gnss@1.1.so|1edcf36fc3afbc465e53e3b74f99fde1e952f718
+system/lib64/vendor.qti.gnss@1.2.so|fc002fdced5768ed97936fde007476c1e9eaabb2
+system/lib64/vendor.qti.gnss@2.0.so|58e69a003eb530cf59bbe204251b9652d28a4b89
+system/lib64/vendor.qti.gnss@2.1.so|e7d80a2a46bcda7445d21701ba94983a43ab46af
 vendor/bin/hw/vendor.qti.gnss@1.0-service|049201d8e22064b87eb52df208d8cda7066d140a
 vendor/bin/loc_launcher|23a4470552c0c418662a7d91fa7f593bee767459
 vendor/bin/lowi-server|f83f6ab9b978c618c87d2b5c66854533d0e3a66f
@@ -628,12 +628,12 @@ vendor/lib/libadpcmdec.so|cce776b6e1edac56705b155444c3f28362055442
 vendor/lib/libsmwrapper.so|cd54c73eaafbe3fe9eacafc845a04d25e44fe553
 
 # Media - from LA.UM.8.6.r1-01900-89xx.0
-lib/extractors/libmmparserextractor.so|41d5ee2c7f76f21f7566956ad0a490f6927c2f95
-lib/libFileMux.so|79661e6dffc90234ad446641264fd0fa1a3fe6ab
-lib/libmmosal.so|9464733295e192301b2577f52fab720e72c0d152
-lib/libmmparser_lite.so|b1b4161b7097f5feeff0f043e8b94cd94553e4ad
-lib/libOmxMux.so|2803ebee03e8372844a278f8ee637c6226e33139
-lib64/libmmosal.so|9ceff2581e86d32bc2795dffb96ebe4bdc88f2f7
+system/lib/extractors/libmmparserextractor.so|41d5ee2c7f76f21f7566956ad0a490f6927c2f95
+system/lib/libFileMux.so|79661e6dffc90234ad446641264fd0fa1a3fe6ab
+system/lib/libmmosal.so|9464733295e192301b2577f52fab720e72c0d152
+system/lib/libmmparser_lite.so|b1b4161b7097f5feeff0f043e8b94cd94553e4ad
+system/lib/libOmxMux.so|2803ebee03e8372844a278f8ee637c6226e33139
+system/lib64/libmmosal.so|9ceff2581e86d32bc2795dffb96ebe4bdc88f2f7
 -vendor/lib/libgpustats.so|e1ffdfcdd7c03b9fb9de7b95e76541780ec34a1e
 vendor/lib/libI420colorconvert.so|309927237aa3e17ae4294a5012df293a03f93121
 vendor/lib/libmm-color-convertor.so|4191173950988206b70d14c4e25f911a1bd6abd9
@@ -711,10 +711,10 @@ vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|656009a5cc2b3bc52a7706579a
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so|00b41ba2e3737041c536d7a3fe87739edbd09516
 
 # QMI - from fujisan - OPM1.171019.026
-etc/permissions/qti_libpermissions.xml:vendor/etc/permissions/qti_libpermissions.xml
-etc/permissions/qti_permissions.xml:vendor/etc/permissions/qti_permissions.xml
-lib/libqmi_cci_system.so:vendor/lib/libqmi_cci_system.so|40ac2bb5902e79d5ac2ed16dcc9c6f30b16c4140
-lib64/libqmi_cci_system.so:vendor/lib64/libqmi_cci_system.so|426a4d1626c6589dec65f2d3f662e1aba92364cb
+system/etc/permissions/qti_libpermissions.xml:vendor/etc/permissions/qti_libpermissions.xml
+system/etc/permissions/qti_permissions.xml:vendor/etc/permissions/qti_permissions.xml
+system/lib/libqmi_cci_system.so:vendor/lib/libqmi_cci_system.so|40ac2bb5902e79d5ac2ed16dcc9c6f30b16c4140
+system/lib64/libqmi_cci_system.so:vendor/lib64/libqmi_cci_system.so|426a4d1626c6589dec65f2d3f662e1aba92364cb
 vendor/bin/irsc_util|a010601ad58297b28a59962b16b66069d922f050
 vendor/lib64/libdiag.so|9789724e0dd59876289183a2ba725d89ddc934ef
 vendor/lib64/libdsi_netctrl.so|8a3b1c1bb1c7d8a2e726c6026f4b31f39d59ed20
@@ -752,15 +752,15 @@ vendor/lib/libqmi_cci.so|5a48201e565516a2fdff11c228162d2eda733fe5
 vendor/lib64/libqmi_cci.so|d5c4f4ad1a484fd00066b8f054877fc7dae77f8b
 
 # RIL - from fujisan - OPM1.171019.026
--app/QtiTelephonyService/QtiTelephonyService.apk|c01d25e34c2dcf993d786f107a17a6323a337baa
-etc/permissions/qcrilhook.xml|9fc58a3d54d20ac1d53bab14608815121aefbce5
-etc/permissions/lpa.xml|5aed30f29c7fbe91dcf7eef9dddbdf96ac6bcbee
-etc/permissions/telephonyservice.xml|b297c8a27443570377d78586b00198839ce326bb
--framework/qcrilhook.jar|a6e0b85b150943212a9dd4cce67981f365bc16c4
--framework/QtiTelephonyServicelibrary.jar|5741f312cb37d8d05f8f217da7a57937880344f4
--framework/uimlpalibrary.jar|468e695d7029af7b39d4502b4a3a1ec9e0a610ba
-lib64/libvendorcfg.so:vendor/lib64/libvendorcfg.so|db29f98af23f824fbce14bccba61c0aee00ac450
--priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|1d399b288e849de7f6d84db67b9da2a77d39ec2c
+-system/app/QtiTelephonyService/QtiTelephonyService.apk|c01d25e34c2dcf993d786f107a17a6323a337baa
+system/etc/permissions/qcrilhook.xml|9fc58a3d54d20ac1d53bab14608815121aefbce5
+system/etc/permissions/lpa.xml|5aed30f29c7fbe91dcf7eef9dddbdf96ac6bcbee
+system/etc/permissions/telephonyservice.xml|b297c8a27443570377d78586b00198839ce326bb
+-system/framework/qcrilhook.jar|a6e0b85b150943212a9dd4cce67981f365bc16c4
+-system/framework/QtiTelephonyServicelibrary.jar|5741f312cb37d8d05f8f217da7a57937880344f4
+-system/framework/uimlpalibrary.jar|468e695d7029af7b39d4502b4a3a1ec9e0a610ba
+system/lib64/libvendorcfg.so:vendor/lib64/libvendorcfg.so|db29f98af23f824fbce14bccba61c0aee00ac450
+-system/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|1d399b288e849de7f6d84db67b9da2a77d39ec2c
 vendor/bin/ATFWD-daemon|ed393ba98ea7df5650e72c751e6811e49ea3eae6
 vendor/bin/ipacm-diag|8f5bbcc906b01d0e84ed026b724c8ba5922690a8
 vendor/bin/netmgrd|f5ce9d1f5570fe17f51256585beccb77ad1375c8
@@ -811,24 +811,24 @@ product/etc/permissions/telephony_product_privapp-permissions-qti.xml|0536410f98
 product/framework/qti-telephony-common.jar|532af9b997feab1f71c3a6457d14b7bec22fe6b6
 
 # RIL - IMS - from fujisan - OPM1.171019.026
-etc/permissions/qti-vzw-ims-internal.xml:vendor/etc/permissions/qti-vzw-ims-internal.xml
-lib64/com.qualcomm.qti.imscmservice@1.0.so|f3f5ae003f520b5e0f02640475cc2adb5cfa2b7b
-lib64/libdiag_system.so|4d2616ea4d6582ac7640e78012ae2eac9d41c53e
-lib64/lib-imscamera.so|3e8c00aaf00be5c34296c65ef7fd8c316eda3c3b
-lib64/lib-imsvideocodec.so|1a7468a4762cdbd9ad9ac642fdf201012b4f8220|d6e58045331dce65dabd58d0fa3c82eda8b758ff
-lib64/lib-imsvtextutils.so|4f71ad895e7a76341b5445ab4faa7861a877349f
-lib64/lib-imsvt.so|d24ee8915f66d87805b2ee576a821ee11ef991bb
-lib64/lib-imsvtutils.so|857bb6659020cc19244c3e6791c005fc5b71843a
-lib64/librcc.so|772073ca428c67865c671a3e7b642beb347d10fa
-lib64/vendor.qti.imsrtpservice@1.0.so|47b03575cf93f607b847d07f6ef6f8e516314260
-lib/com.qualcomm.qti.imscmservice@1.0.so|7b3053e3ad0b467a55a26306bc2dd6eca138a6ae
-lib/libdiag_system.so|ffcb0d604fdf902331b03ef6f8fe2948bfae57a3
-lib/lib-imscamera.so|1fa4dcec45f8e3a3cefeb970e7d5cc419706ce50
-lib/lib-imsvideocodec.so|408408a616e65c276a81572baa2c9eac27530197|4938622350e0298a1204c859fdbbe9fef57bc6fd
-lib/lib-imsvtextutils.so|ad1a0691b60fe6ca97b051533c9a845a5fd25f0d
-lib/lib-imsvtutils.so|d89e8adda28ebf3e14e7245ef6885da790f6f351
-lib/librcc.so|a6ec735f5f2fe9d76411d64338d51741cda47b7a
-lib/vendor.qti.imsrtpservice@1.0.so|4f089deff583e1c745a394679f65411634452d2f
+system/etc/permissions/qti-vzw-ims-internal.xml:vendor/etc/permissions/qti-vzw-ims-internal.xml
+system/lib64/com.qualcomm.qti.imscmservice@1.0.so|f3f5ae003f520b5e0f02640475cc2adb5cfa2b7b
+system/lib64/libdiag_system.so|4d2616ea4d6582ac7640e78012ae2eac9d41c53e
+system/lib64/lib-imscamera.so|3e8c00aaf00be5c34296c65ef7fd8c316eda3c3b
+system/lib64/lib-imsvideocodec.so|1a7468a4762cdbd9ad9ac642fdf201012b4f8220|d6e58045331dce65dabd58d0fa3c82eda8b758ff
+system/lib64/lib-imsvtextutils.so|4f71ad895e7a76341b5445ab4faa7861a877349f
+system/lib64/lib-imsvt.so|d24ee8915f66d87805b2ee576a821ee11ef991bb
+system/lib64/lib-imsvtutils.so|857bb6659020cc19244c3e6791c005fc5b71843a
+system/lib64/librcc.so|772073ca428c67865c671a3e7b642beb347d10fa
+system/lib64/vendor.qti.imsrtpservice@1.0.so|47b03575cf93f607b847d07f6ef6f8e516314260
+system/lib/com.qualcomm.qti.imscmservice@1.0.so|7b3053e3ad0b467a55a26306bc2dd6eca138a6ae
+system/lib/libdiag_system.so|ffcb0d604fdf902331b03ef6f8fe2948bfae57a3
+system/lib/lib-imscamera.so|1fa4dcec45f8e3a3cefeb970e7d5cc419706ce50
+system/lib/lib-imsvideocodec.so|408408a616e65c276a81572baa2c9eac27530197|4938622350e0298a1204c859fdbbe9fef57bc6fd
+system/lib/lib-imsvtextutils.so|ad1a0691b60fe6ca97b051533c9a845a5fd25f0d
+system/lib/lib-imsvtutils.so|d89e8adda28ebf3e14e7245ef6885da790f6f351
+system/lib/librcc.so|a6ec735f5f2fe9d76411d64338d51741cda47b7a
+system/lib/vendor.qti.imsrtpservice@1.0.so|4f089deff583e1c745a394679f65411634452d2f
 vendor/bin/imsdatadaemon|aa90b780e0b0072a317d79789d23f23d694476ba
 vendor/bin/imsqmidaemon|0052efbf4e51bbafec10f33902616723ce38da2a
 vendor/bin/imsrcsd|3d9efa0f67330592cb9d7c0376517fc9f76680dd|e2ffda98510805e741a0c3faf424ee73f015974d
@@ -893,8 +893,8 @@ vendor/bin/time_daemon|fa1b87481313fc039d969c1ac7c06c77422ff38e
 vendor/lib64/libtime_genoff.so|06df52867790cdbbcc674a3a28d7ad7c8cc161ac
 
 # VR - from B32
-lib64/hw/vr.default.so|02bacbcce3501df81cbc9e1d1eb7e1c6314dd26b
-lib/hw/vr.default.so|c17c6814b921f212e2dfbb2045a4fe3a9ced5493
+system/lib64/hw/vr.default.so|02bacbcce3501df81cbc9e1d1eb7e1c6314dd26b
+system/lib/hw/vr.default.so|c17c6814b921f212e2dfbb2045a4fe3a9ced5493
 
 # WiFi - from daisy - PKQ1.180917.001
 vendor/bin/cnss-daemon|badadcc672341e36228301b02c2bfaa36be09233
