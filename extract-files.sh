@@ -78,6 +78,12 @@ function blob_fixup() {
     vendor/lib/hw/camera.msm8996.so)
         sed -i "s/service.bootanim.exit/service.bootanim.zzzz/g" "${2}"
         ;;
+    # Rename daisy blobs for msm8996
+    vendor/lib64/hw/vulkan.msm8996.so)
+        sed -i "s/vulkan.msm8953.so/vulkan.msm8996.so/g" "${2}"
+        ;;
+    vendor/lib/hw/vulkan.msm8996.so)
+        sed -i "s/vulkan.msm8953.so/vulkan.msm8996.so/g" "${2}"
     # Patch fingerprint blobs for VNDK
     vendor/bin/gx_fpd)
         patchelf --remove-needed "libunwind.so" "${2}"
