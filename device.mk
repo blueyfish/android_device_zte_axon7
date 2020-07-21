@@ -109,11 +109,9 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@4.0 \
     android.hardware.audio.effect@4.0-impl \
     android.hardware.audio.effect@2.0-service \
-    android.hardware.bluetooth.audio@2.0-impl \
     android.hardware.soundtrigger@2.1-impl \
     audio.a2dp.default \
     audio_amplifier.msm8996 \
-    audio.bluetooth.default \
     audio.primary.msm8996 \
     audio.r_submix.default \
     audio.usb.default \
@@ -149,6 +147,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     AntHalService \
     com.dsi.ant.antradio_library
+
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth.audio@2.0-impl \
+    audio.bluetooth.default \
+    vendor.qti.hardware.btconfigstore@1.0.vendor
 
 # Charger
 PRODUCT_PACKAGES += \
