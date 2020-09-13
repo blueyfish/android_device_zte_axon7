@@ -95,6 +95,13 @@ function blob_fixup() {
     vendor/lib/hw/vulkan.msm8996.so|vendor/lib64/hw/vulkan.msm8996.so)
         patchelf --set-soname "vulkan.msm8996.so" "${2}"
         ;;
+    # Fix protobuf missing symbol
+    vendor/lib64/libwvhidl.so)
+        patchelf --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v28.so" "${2}"
+        ;;
+    vendor/lib64/libsettings.so)
+        patchelf --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v28.so" "${2}"
+        ;;
     esac
 }
 
