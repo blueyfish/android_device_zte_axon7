@@ -36,6 +36,9 @@ source "${HELPER}"
 
 function blob_fixup() {
     case "${1}" in
+    product/lib64/libdpmframework.so)
+        patchelf --add-needed "libcutils_shim.so" "${2}"
+        ;;
     # Load NXP container profiles from vendor
     vendor/lib/libtfa9890.so)
         sed -i "s|/etc/settings/stereo_qcom_spk.cnt|/vendor/etc/tfa/stereo_qc_spk.cnt|g" "${2}"

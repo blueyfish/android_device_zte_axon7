@@ -407,7 +407,8 @@ PRODUCT_PACKAGES += \
 # Shims
 PRODUCT_PACKAGES += \
     libbase_shim \
-    libui_shim
+    libui_shim \
+    libcutils_shim
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
