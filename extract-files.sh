@@ -74,6 +74,10 @@ function blob_fixup() {
     vendor/lib/libFNVfbEngineHAL.so)
         patchelf --add-needed "libui_shim.so" "${2}"
         ;;
+    # Patch service.bootanim.exit in camera HAL
+    vendor/lib/hw/camera.msm8996.so)
+        sed -i "s/service.bootanim.exit/service.bootanim.zzzz/g" "${2}"
+        ;;
     # Patch fingerprint blobs for VNDK
     vendor/bin/gx_fpd)
         patchelf --remove-needed "libunwind.so" "${2}"
