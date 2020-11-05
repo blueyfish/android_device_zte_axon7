@@ -70,7 +70,7 @@ function blob_fixup() {
     # Provide shim for libdpmframework.so
     system_ext/lib64/libdpmframework.so)
         for  LIBCUTILS_SHIM in $(grep -L "libcutils_shim.so" "${2}"); do
-            patchelf --add-needed "libcutils_shim.so" "$LIBCUTILS_SHIM"
+            "${PATCHELF}" --add-needed "libcutils_shim.so" "$LIBCUTILS_SHIM"
         done
         ;;
     # Load NXP container profiles from vendor
@@ -92,14 +92,14 @@ function blob_fixup() {
         ;;
     # Shim libbase LogMessage functions
     vendor/bin/imsrcsd)
-        patchelf --add-needed "libbase_shim.so" "${2}"
+        "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
         ;;
     vendor/lib64/lib-uceservice.so)
-        patchelf --add-needed "libbase_shim.so" "${2}"
+        "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
         ;;
     # Shim libui GraphicBuffer lock functions
     lib/lib-imsvideocodec.so|lib64/lib-imsvideocodec.so|vendor/lib/libFNVfbEngineHAL.so|vendor/lib/libZEffectLib.so)
-        patchelf --add-needed "libui_shim.so" "${2}"
+        "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
         ;;
     # Patch service.bootanim.exit in camera HAL
     vendor/lib/hw/camera.msm8996.so)
@@ -107,8 +107,8 @@ function blob_fixup() {
         ;;
     # Patch fingerprint blobs for VNDK
     vendor/bin/gx_fpd)
-        patchelf --remove-needed "libunwind.so" "${2}"
-        patchelf --remove-needed "libbacktrace.so" "${2}"
+        "${PATCHELF}" --remove-needed "libunwind.so" "${2}"
+        "${PATCHELF}" --remove-needed "libbacktrace.so" "${2}"
         ;;
     # Patch crashing issue in RIL library
     vendor/lib64/libril-qc-qmi-1.so)
@@ -120,14 +120,14 @@ function blob_fixup() {
         ;;
     # Fix soname for Vulkan libraries
     vendor/lib/hw/vulkan.msm8996.so|vendor/lib64/hw/vulkan.msm8996.so)
-        patchelf --set-soname "vulkan.msm8996.so" "${2}"
+        "${PATCHELF}" --set-soname "vulkan.msm8996.so" "${2}"
         ;;
     # Fix protobuf missing symbol
     vendor/lib64/libwvhidl.so)
-        patchelf --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v28.so" "${2}"
+        "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v28.so" "${2}"
         ;;
     vendor/lib64/libsettings.so)
-        patchelf --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v28.so" "${2}"
+        "${PATCHELF}" --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v28.so" "${2}"
         ;;
     esac
 }
