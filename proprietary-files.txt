@@ -811,7 +811,6 @@ product/etc/permissions/telephony_product_privapp-permissions-qti.xml|0536410f98
 product/framework/qti-telephony-common.jar|532af9b997feab1f71c3a6457d14b7bec22fe6b6
 
 # RIL - IMS - from fujisan - OPM1.171019.026
-system/etc/permissions/qti-vzw-ims-internal.xml:vendor/etc/permissions/qti-vzw-ims-internal.xml
 system/lib64/com.qualcomm.qti.imscmservice@1.0.so|f3f5ae003f520b5e0f02640475cc2adb5cfa2b7b
 system/lib64/libdiag_system.so|4d2616ea4d6582ac7640e78012ae2eac9d41c53e
 system/lib64/lib-imscamera.so|3e8c00aaf00be5c34296c65ef7fd8c316eda3c3b
@@ -833,7 +832,6 @@ vendor/bin/imsdatadaemon|aa90b780e0b0072a317d79789d23f23d694476ba
 vendor/bin/imsqmidaemon|0052efbf4e51bbafec10f33902616723ce38da2a
 vendor/bin/imsrcsd|3d9efa0f67330592cb9d7c0376517fc9f76680dd|e2ffda98510805e741a0c3faf424ee73f015974d
 vendor/bin/ims_rtp_daemon|eb935a203040a90542e95c125538b0904ed8cc53
-vendor/framework/qti-vzw-ims-internal.jar|6643f94d22955a78ddfa4bab8990cae60a5b2983
 vendor/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so|2bd0e10950fd516dfed2c58ec2dd8dd6776967d0
 vendor/lib64/lib-dplmedia.so|afcc1bd81b491404ed7f1882e012738ef4cc5565
 vendor/lib64/lib-imscmservice.so|a8f86417011c35d15696f04103e5ec0ccc3c121e
