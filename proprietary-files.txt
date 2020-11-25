@@ -394,11 +394,11 @@ vendor/lib/libmmcamera_isp_sub_module.so
 system/etc/cne/Nexus/ATT/ATT_profiles.xml|33e568627fd3f94dc45bca1c01ad10e6d8fb5b52
 system/etc/cne/Nexus/ROW/ROW_profiles.xml|238e785e9674b27c4b2365958d127533d7293132
 system/etc/cne/Nexus/VZW/VZW_profiles.xml|0f63b632e3a3f114def7aeadaabd13851c8ceec5
-product/lib64/com.quicinc.cne.api@1.0.so|18c1b6e0330d0a87a2440fd0cc17bfba6041c6c7
-product/lib64/com.quicinc.cne.api@1.1.so|33dd5602bf97a1b3012059affa03e30370f5ea50
-product/lib64/com.quicinc.cne.constants@1.0.so|1d8d3a645ae79df79d15241fb7530abbf312f6ba
-product/lib64/com.quicinc.cne.constants@2.0.so|ee07fac05853c160e8eaa4ecbba4232921e40b28
-product/lib64/com.quicinc.cne.constants@2.1.so|b6ea75984fafc05d2d745b1da0f48213bd1409be
+product/lib64/com.quicinc.cne.api@1.0.so:system_ext/lib64/com.quicinc.cne.api@1.0.so|18c1b6e0330d0a87a2440fd0cc17bfba6041c6c7
+product/lib64/com.quicinc.cne.api@1.1.so:system_ext/lib64/com.quicinc.cne.api@1.1.so|33dd5602bf97a1b3012059affa03e30370f5ea50
+product/lib64/com.quicinc.cne.constants@1.0.so:system_ext/lib64/com.quicinc.cne.constants@1.0.so|1d8d3a645ae79df79d15241fb7530abbf312f6ba
+product/lib64/com.quicinc.cne.constants@2.0.so:system_ext/lib64/com.quicinc.cne.constants@2.0.so|ee07fac05853c160e8eaa4ecbba4232921e40b28
+product/lib64/com.quicinc.cne.constants@2.1.so:system_ext/lib64/com.quicinc.cne.constants@2.1.so|b6ea75984fafc05d2d745b1da0f48213bd1409be
 -vendor/app/CneApp/CneApp.apk|fafd7625c3602ed93a5581bbf81f7070c7b9d457
 -vendor/app/IWlanService/IWlanService.apk|d6a8c374438e1b3b1d475ac672b6ec1537416f64
 vendor/bin/cnd|07f12b225d7c63bd779d2bbfe2a0d738a149ce3e
@@ -452,19 +452,19 @@ vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so|603e4ba092494a0443888d6234c923d
 vendor/lib64/vendor.qti.latency@2.0.so|5382bc6cab521556bfc2abccb088a34b1dbeb65a
 
 # DPM - from LA.UM.8.6.r1-01900-89xx.0
-product/bin/dpmd|7503d40ddb06e41333aafe4613d0dba6aed9b896
-product/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
-product/etc/init/dpmd.rc|7f95195a89fddce06b93006a737701270e91f669
-product/etc/permissions/com.qti.dpmframework.xml|4613f8b8629d0b823e6aaab45d399ac30da06c09
-product/etc/permissions/dpmapi.xml|0991b3069308620cfcad53873e9f09af181b981d
-product/framework/com.qti.dpmframework.jar|e39a7e06af2d1e95a3724c19c36b8716277f53a1
-product/framework/dpmapi.jar|4696df9793ad676b305d53b5d7ce65ecf74771ad
-product/lib64/com.qualcomm.qti.dpm.api@1.0.so|a763bb1bbeecb84723bff6f547a3b23fab68dee3
-product/lib64/libdpmctmgr.so|09cc44a0d23b595a0facda6fc4c25f2e7f348b4b
-product/lib64/libdpmfdmgr.so|473001f18645adbc220a09bb6d9f75c4cb522477
-product/lib64/libdpmframework.so|b0e41a86e3d4b1bfd19e9fe152346fc86e67a478
-product/lib64/libdpmtcm.so|8205c269384941cdf728a8491666f06a518842c4
--product/priv-app/dpmserviceapp/dpmserviceapp.apk|cd3fc5c9f5dade06083cfbb2ff3443b668ae4a29
+product/bin/dpmd:system_ext/bin/dpmd|7503d40ddb06e41333aafe4613d0dba6aed9b896
+product/etc/dpm/dpm.conf:system_ext/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
+product/etc/init/dpmd.rc:system_ext/etc/init/dpmd.rc|7f95195a89fddce06b93006a737701270e91f669
+product/etc/permissions/com.qti.dpmframework.xml:system_ext/etc/permissions/com.qti.dpmframework.xml|4613f8b8629d0b823e6aaab45d399ac30da06c09
+product/etc/permissions/dpmapi.xml:system_ext/etc/permissions/dpmapi.xml|0991b3069308620cfcad53873e9f09af181b981d
+product/framework/com.qti.dpmframework.jar:system_ext/framework/com.qti.dpmframework.jar|e39a7e06af2d1e95a3724c19c36b8716277f53a1
+product/framework/dpmapi.jar:system_ext/framework/dpmapi.jar|4696df9793ad676b305d53b5d7ce65ecf74771ad
+product/lib64/com.qualcomm.qti.dpm.api@1.0.so:system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so|a763bb1bbeecb84723bff6f547a3b23fab68dee3
+product/lib64/libdpmctmgr.so:system_ext/lib64/libdpmctmgr.so|09cc44a0d23b595a0facda6fc4c25f2e7f348b4b
+product/lib64/libdpmfdmgr.so:system_ext/lib64/libdpmfdmgr.so|473001f18645adbc220a09bb6d9f75c4cb522477
+product/lib64/libdpmframework.so:system_ext/lib64/libdpmframework.so|b0e41a86e3d4b1bfd19e9fe152346fc86e67a478
+product/lib64/libdpmtcm.so:system_ext/lib64/libdpmtcm.so|8205c269384941cdf728a8491666f06a518842c4
+-product/priv-app/dpmserviceapp/dpmserviceapp.apk:system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk|cd3fc5c9f5dade06083cfbb2ff3443b668ae4a29
 vendor/bin/dpmQmiMgr|f15665f1f51dc1a446f012f63075633254718ece
 vendor/etc/init/dpmQmiMgr.rc|67569302d3a8828a9118c835e5b69c51b0c8ac68
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|a763bb1bbeecb84723bff6f547a3b23fab68dee3
@@ -752,15 +752,15 @@ vendor/lib/libqmi_cci.so|5a48201e565516a2fdff11c228162d2eda733fe5
 vendor/lib64/libqmi_cci.so|d5c4f4ad1a484fd00066b8f054877fc7dae77f8b
 
 # RIL - from fujisan - OPM1.171019.026
--system/app/QtiTelephonyService/QtiTelephonyService.apk|c01d25e34c2dcf993d786f107a17a6323a337baa
-system/etc/permissions/qcrilhook.xml|9fc58a3d54d20ac1d53bab14608815121aefbce5
-system/etc/permissions/lpa.xml|5aed30f29c7fbe91dcf7eef9dddbdf96ac6bcbee
-system/etc/permissions/telephonyservice.xml|b297c8a27443570377d78586b00198839ce326bb
--system/framework/qcrilhook.jar|a6e0b85b150943212a9dd4cce67981f365bc16c4
--system/framework/QtiTelephonyServicelibrary.jar|5741f312cb37d8d05f8f217da7a57937880344f4
--system/framework/uimlpalibrary.jar|468e695d7029af7b39d4502b4a3a1ec9e0a610ba
+-system/app/QtiTelephonyService/QtiTelephonyService.apk:system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|c01d25e34c2dcf993d786f107a17a6323a337baa
+system/etc/permissions/qcrilhook.xml:system_ext/etc/permissions/qcrilhook.xml|9fc58a3d54d20ac1d53bab14608815121aefbce5
+system/etc/permissions/lpa.xml:system_ext/etc/permissions/lpa.xml|5aed30f29c7fbe91dcf7eef9dddbdf96ac6bcbee
+system/etc/permissions/telephonyservice.xml:system_ext/etc/permissions/telephonyservice.xml|b297c8a27443570377d78586b00198839ce326bb
+-system/framework/qcrilhook.jar:system_ext/framework/qcrilhook.jar|a6e0b85b150943212a9dd4cce67981f365bc16c4
+-system/framework/QtiTelephonyServicelibrary.jar:system_ext/framework/QtiTelephonyServicelibrary.jar|5741f312cb37d8d05f8f217da7a57937880344f4
+-system/framework/uimlpalibrary.jar:system_ext/framework/uimlpalibrary.jar|468e695d7029af7b39d4502b4a3a1ec9e0a610ba
 system/lib64/libvendorcfg.so:vendor/lib64/libvendorcfg.so|db29f98af23f824fbce14bccba61c0aee00ac450
--system/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|1d399b288e849de7f6d84db67b9da2a77d39ec2c
+-system/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk:system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|1d399b288e849de7f6d84db67b9da2a77d39ec2c
 vendor/bin/ATFWD-daemon|ed393ba98ea7df5650e72c751e6811e49ea3eae6
 vendor/bin/ipacm-diag|8f5bbcc906b01d0e84ed026b724c8ba5922690a8
 vendor/bin/netmgrd|f5ce9d1f5570fe17f51256585beccb77ad1375c8
@@ -811,23 +811,23 @@ product/etc/permissions/telephony_product_privapp-permissions-qti.xml|0536410f98
 product/framework/qti-telephony-common.jar|532af9b997feab1f71c3a6457d14b7bec22fe6b6
 
 # RIL - IMS - from fujisan - OPM1.171019.026
-system/lib64/com.qualcomm.qti.imscmservice@1.0.so|f3f5ae003f520b5e0f02640475cc2adb5cfa2b7b
-system/lib64/libdiag_system.so|4d2616ea4d6582ac7640e78012ae2eac9d41c53e
-system/lib64/lib-imscamera.so|3e8c00aaf00be5c34296c65ef7fd8c316eda3c3b
-system/lib64/lib-imsvideocodec.so|1a7468a4762cdbd9ad9ac642fdf201012b4f8220|d6e58045331dce65dabd58d0fa3c82eda8b758ff
-system/lib64/lib-imsvtextutils.so|4f71ad895e7a76341b5445ab4faa7861a877349f
-system/lib64/lib-imsvt.so|d24ee8915f66d87805b2ee576a821ee11ef991bb
-system/lib64/lib-imsvtutils.so|857bb6659020cc19244c3e6791c005fc5b71843a
-system/lib64/librcc.so|772073ca428c67865c671a3e7b642beb347d10fa
-system/lib64/vendor.qti.imsrtpservice@1.0.so|47b03575cf93f607b847d07f6ef6f8e516314260
-system/lib/com.qualcomm.qti.imscmservice@1.0.so|7b3053e3ad0b467a55a26306bc2dd6eca138a6ae
-system/lib/libdiag_system.so|ffcb0d604fdf902331b03ef6f8fe2948bfae57a3
-system/lib/lib-imscamera.so|1fa4dcec45f8e3a3cefeb970e7d5cc419706ce50
-system/lib/lib-imsvideocodec.so|408408a616e65c276a81572baa2c9eac27530197|4938622350e0298a1204c859fdbbe9fef57bc6fd
-system/lib/lib-imsvtextutils.so|ad1a0691b60fe6ca97b051533c9a845a5fd25f0d
-system/lib/lib-imsvtutils.so|d89e8adda28ebf3e14e7245ef6885da790f6f351
-system/lib/librcc.so|a6ec735f5f2fe9d76411d64338d51741cda47b7a
-system/lib/vendor.qti.imsrtpservice@1.0.so|4f089deff583e1c745a394679f65411634452d2f
+system/lib64/com.qualcomm.qti.imscmservice@1.0.so:system_ext/lib64/com.qualcomm.qti.imscmservice@1.0.so|f3f5ae003f520b5e0f02640475cc2adb5cfa2b7b
+system/lib64/libdiag_system.so:system_ext/lib64/libdiag_system.so|4d2616ea4d6582ac7640e78012ae2eac9d41c53e
+system/lib64/lib-imscamera.so:system_ext/lib64/lib-imscamera.so|3e8c00aaf00be5c34296c65ef7fd8c316eda3c3b
+system/lib64/lib-imsvideocodec.so:system_ext/lib64/lib-imsvideocodec.so|1a7468a4762cdbd9ad9ac642fdf201012b4f8220|d6e58045331dce65dabd58d0fa3c82eda8b758ff
+system/lib64/lib-imsvtextutils.so:system_ext/lib64/lib-imsvtextutils.so|4f71ad895e7a76341b5445ab4faa7861a877349f
+system/lib64/lib-imsvt.so:system_ext/lib64/lib-imsvt.so|d24ee8915f66d87805b2ee576a821ee11ef991bb
+system/lib64/lib-imsvtutils.so:system_ext/lib64/lib-imsvtutils.so|857bb6659020cc19244c3e6791c005fc5b71843a
+system/lib64/librcc.so:system_ext/lib64/librcc.so|772073ca428c67865c671a3e7b642beb347d10fa
+system/lib64/vendor.qti.imsrtpservice@1.0.so:system_ext/lib64/vendor.qti.imsrtpservice@1.0.so|47b03575cf93f607b847d07f6ef6f8e516314260
+system/lib/com.qualcomm.qti.imscmservice@1.0.so:system_ext/lib/com.qualcomm.qti.imscmservice@1.0.so|7b3053e3ad0b467a55a26306bc2dd6eca138a6ae
+system/lib/libdiag_system.so:system_ext/lib/libdiag_system.so|ffcb0d604fdf902331b03ef6f8fe2948bfae57a3
+system/lib/lib-imscamera.so:system_ext/lib/lib-imscamera.so|1fa4dcec45f8e3a3cefeb970e7d5cc419706ce50
+system/lib/lib-imsvideocodec.so:system_ext/lib/lib-imsvideocodec.so|408408a616e65c276a81572baa2c9eac27530197|4938622350e0298a1204c859fdbbe9fef57bc6fd
+system/lib/lib-imsvtextutils.so:system_ext/lib/lib-imsvtextutils.so|ad1a0691b60fe6ca97b051533c9a845a5fd25f0d
+system/lib/lib-imsvtutils.so:system_ext/lib/lib-imsvtutils.so|d89e8adda28ebf3e14e7245ef6885da790f6f351
+system/lib/librcc.so:system_ext/lib/librcc.so|a6ec735f5f2fe9d76411d64338d51741cda47b7a
+system/lib/vendor.qti.imsrtpservice@1.0.so:system_ext/lib/vendor.qti.imsrtpservice@1.0.so|4f089deff583e1c745a394679f65411634452d2f
 vendor/bin/imsdatadaemon|aa90b780e0b0072a317d79789d23f23d694476ba
 vendor/bin/imsqmidaemon|0052efbf4e51bbafec10f33902616723ce38da2a
 vendor/bin/imsrcsd|3d9efa0f67330592cb9d7c0376517fc9f76680dd|e2ffda98510805e741a0c3faf424ee73f015974d
@@ -860,9 +860,9 @@ vendor/lib/vendor.qti.imsrtpservice@1.0_vendor.so|3a46de102fb4b7634a2cfc61d5171e
 vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so|447d205fca7ea674f7f3f072e7d26ae0a0a9b4b4
 
 # RIL - IMS - from LA.UM.8.6.r1-01900-89xx.0
-product/lib64/libimscamera_jni.so|7cb89110cca94d37d68c705f12a7a5a4ee106139
-product/lib64/libimsmedia_jni.so|e50217e9eb8878136614db66313508ac970a2b42
--product/priv-app/ims/ims.apk|ce41daca328db67984843588e8bafa7e0eb53a0a
+product/lib64/libimscamera_jni.so:system_ext/lib64/libimscamera_jni.so|7cb89110cca94d37d68c705f12a7a5a4ee106139
+product/lib64/libimsmedia_jni.so:system_ext/lib64/libimsmedia_jni.so|e50217e9eb8878136614db66313508ac970a2b42
+-product/priv-app/ims/ims.apk:system_ext/priv-app/ims/ims.apk|ce41daca328db67984843588e8bafa7e0eb53a0a
 
 # Sensors
 vendor/etc/sensors/hals.conf
