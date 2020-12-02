@@ -25,7 +25,6 @@
 #pragma push_macro("PROPERTY_VALUE_MAX")
 
 #define BTM_DEF_LOCAL_NAME   "Axon 7"
-#define BLUETOOTH_QTI_SW TRUE
 #define MAX_ACL_CONNECTIONS   16
 #define MAX_L2CAP_CHANNELS    16
 #define BLE_VND_INCLUDED   TRUE
