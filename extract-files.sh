@@ -36,8 +36,11 @@ source "${HELPER}"
 
 function blob_fixup() {
     case "${1}" in
+    # Provide shim for libdpmframework.so
     product/lib64/libdpmframework.so)
-        patchelf --add-needed "libcutils_shim.so" "${2}"
+        for  LIBCUTILS_SHIM in $(grep -L "libcutils_shim.so" "${2}"); do
+            patchelf --add-needed "libcutils_shim.so" "$LIBCUTILS_SHIM"
+        done
         ;;
     # Load NXP container profiles from vendor
     vendor/lib/libtfa9890.so)
