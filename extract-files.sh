@@ -67,6 +67,11 @@ function blob_fixup() {
     vendor/lib64/lib-uceservice.so)
         patchelf --add-needed "libbase_shim.so" "${2}"
         ;;
+    # Patch fingerprint blobs for VNDK
+    vendor/bin/gx_fpd)
+        patchelf --remove-needed "libunwind.so" "${2}"
+        patchelf --remove-needed "libbacktrace.so" "${2}"
+        ;;
     esac
 }
 
