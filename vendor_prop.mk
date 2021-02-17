@@ -176,6 +176,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.dpc=false \
     ro.vendor.sensors.mot_detect=false \
     ro.vendor.sensors.pmd=false \
+    ro.vendor.sensors.smd=false \
     ro.vendor.sensors.sta_detect=false
 
 # TimeService
