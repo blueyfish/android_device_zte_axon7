@@ -29,12 +29,11 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 PRODUCT_NAME := lineage_axon7
 PRODUCT_DEVICE := axon7
 PRODUCT_BRAND := ZTE
-PRODUCT_MODEL := ZTE A2017U
+PRODUCT_MODEL := ZTE Axon 7
 PRODUCT_MANUFACTURER := ZTE
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="ailsa_ii" \
-    PRODUCT_NAME="P996A01_O" \
     PRIVATE_BUILD_DESC="P996A01_O-user 8.0.0 OPR1.170623.032 28 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
