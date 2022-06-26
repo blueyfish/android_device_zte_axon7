@@ -1,3 +1,6 @@
+### All blobs from this list, unless pinned and noted as otherwise,
+##  are from P996A01_O-user 8.0.0 OPR1.170623.032 28 release-keys.
+
 # ADSP
 vendor/bin/adsprpcd
 vendor/lib64/libadsp_default_listener.so
@@ -664,7 +667,7 @@ vendor/lib/libvqzip.so|0b906db131e99cd5460b8a72d05e86721243de95
 # NFC - SmartCardService
 etc/permissions/org.simalliance.openmobileapi.xml
 framework/org.simalliance.openmobileapi.jar
--priv-app/SmartcardService/SmartcardService.apk
+-vendor/app/SmartcardService/SmartcardService.apk
 
 # NFC firmware
 vendor/firmware/libpn548ad_fw.so:vendor/lib/libpn548ad_fw.so
