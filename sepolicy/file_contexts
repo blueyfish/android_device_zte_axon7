@@ -8,6 +8,7 @@
 
 # Devices
 /dev/goodix_fp                              u:object_r:gx_fpd_device:s0
+/dev/i2c-[0-9]+		                        u:object_r:i2c_device:s0
 /dev/pn5xx                                  u:object_r:nfc_device:s0
 
 # Input devices
