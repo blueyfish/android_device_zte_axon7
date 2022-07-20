@@ -35,7 +35,7 @@
 
     <!-- MMS user agent profile url -->
     <string name="config_mms_user_agent_profile_url" translatable="false"
-            >https://www.zte.com.cn/mobile/uaprof/ZTE%20A2017U.xml</string>
+            >https://www.zte.com.cn/mobile/uaprof/ZTE%20A2017.xml</string>
 
     <!-- List of regexpressions describing the interface (if any) that represent tetherable
          USB interfaces.  If the device doesn't want to support tething over USB this should
