@@ -218,7 +218,7 @@ TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_axon7
 TARGET_RELEASETOOLS_EXTENSIONS := $(PLATFORM_PATH)
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2018-07-01
+VENDOR_SECURITY_PATCH := 2018-12-01
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
