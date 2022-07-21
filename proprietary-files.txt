@@ -117,10 +117,10 @@ etc/settings/stereo_qcom_spk_r.cnt:vendor/etc/tfa/stereo_qc_spk_r.cnt
 lib64/libtfa9890.so:vendor/lib64/libtfa9890.so
 lib/libtfa9890.so:vendor/lib/libtfa9890.so
 
-# Bluetooth
+# Bluetooth - from gemini - MIUI V10.2.2.0.OAAMIXM
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|2f0b887ad4d68187bd7b42c0144e16445e22753e|dc8af9df645118df4b3396b0d5495aa0e3d0309f
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|28631704ea8e625a497dcf17a10fd492423edc5b|e5cb034a2082b208d0cfcdc5b83dfeb96f6b5deb
 vendor/lib64/libbtnv.so
 vendor/lib64/libbt-hidlclient.so
 
