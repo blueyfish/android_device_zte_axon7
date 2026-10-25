@@ -61,9 +61,6 @@ function blob_fixup() {
     vendor/bin/imsrcsd)
         patchelf --add-needed "libbase_shim.so" "${2}"
         ;;
-    vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so)
-        patchelf --add-needed "libbase_shim.so" "${2}"
-        ;;
     vendor/lib64/lib-uceservice.so)
         patchelf --add-needed "libbase_shim.so" "${2}"
         ;;
