@@ -5,10 +5,10 @@
 /data/camera(/.*)?                          u:object_r:camera_socket:s0
 /data/connectivity(/.*)?                    u:object_r:cnd_core_data_file:s0
 /data/system/fingerprint(/.*)?              u:object_r:gx_fpd_data_file:s0
-/data/vendor/misc/audio(/.*)?               u:object_r:audio_vendor_data_file:s0
 
 # Devices
 /dev/goodix_fp                              u:object_r:gx_fpd_device:s0
+/dev/i2c-[0-9]+		                        u:object_r:i2c_device:s0
 /dev/pn5xx                                  u:object_r:nfc_device:s0
 
 # Input devices
@@ -18,6 +18,10 @@
 # Sys files
 /sys/devices/soc/75b7000\.i2c/i2c-9/9-[0-9a-f]+/leds(/.*)?    u:object_r:sysfs_leds:s0
 /sys/devices/soc/leds-qpnp-[0-9]+/leds(/.*)?                  u:object_r:sysfs_leds:s0
+
+# Root files
+/bt_firmware(/.*)?    u:object_r:bt_firmware_file:s0
+/firmware(/.*)?       u:object_r:firmware_file:s0
 
 # Binaries
 /(vendor|system/vendor)/bin/gx_fpd          u:object_r:gx_fpd_exec:s0

@@ -34,6 +34,58 @@ if [ ! -f "${HELPER}" ]; then
 fi
 source "${HELPER}"
 
+function blob_fixup() {
+    case "${1}" in
+    # Load NXP container profiles from vendor
+    vendor/lib/libtfa9890.so)
+        sed -i "s|/etc/settings/stereo_qcom_spk.cnt|/vendor/etc/tfa/stereo_qc_spk.cnt|g" "${2}"
+        sed -i "s|/etc/settings/mono_qcom_rcv.cnt|/vendor/etc/tfa/mono_qc_rcv.cnt|g" "${2}"
+        sed -i "s|/etc/settings/mono_qcom_spk_l.cnt|/vendor/etc/tfa/mono_qc_spk_l.cnt|g" "${2}"
+        sed -i "s|/etc/settings/mono_qcom_spk_r.cnt|/vendor/etc/tfa/mono_qc_spk_r.cnt|g" "${2}"
+        sed -i "s|/etc/settings/stereo_qcom_spk_l.cnt|/vendor/etc/tfa/stereo_qc_spk_l.cnt|g" "${2}"
+        sed -i "s|/etc/settings/stereo_qcom_spk_r.cnt|/vendor/etc/tfa/stereo_qc_spk_r.cnt|g" "${2}"
+        ;;
+    # Correct VZW IMS library location
+    vendor/etc/permissions/qti-vzw-ims-internal.xml)
+        sed -i "s|/system/vendor/framework/qti-vzw-ims-internal.jar|/vendor/framework/qti-vzw-ims-internal.jar|g" "${2}"
+        ;;
+    # Correct android.hidl.manager@1.0-java jar name
+    vendor/etc/permissions/qti_libpermissions.xml)
+        sed -i "s|name=\"android.hidl.manager-V1.0-java|name=\"android.hidl.manager@1.0-java|g" "${2}"
+        ;;
+    # Copy and use android.hardware.gnss@1.0.so from v27
+    vendor/lib64/vendor.qti.gnss@1.0_vendor.so)
+        patchelf --replace-needed "android.hardware.gnss@1.0.so" "android.hardware.gnss@1.0-v27.so" "${2}"
+        ;;
+    # Shim libbase LogMessage functions
+    vendor/bin/imsrcsd)
+        patchelf --add-needed "libbase_shim.so" "${2}"
+        ;;
+    vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so)
+        patchelf --add-needed "libbase_shim.so" "${2}"
+        ;;
+    vendor/lib64/lib-uceservice.so)
+        patchelf --add-needed "libbase_shim.so" "${2}"
+        ;;
+    # Shim libui GraphicBuffer lock functions
+    vendor/lib/libZEffectLib.so)
+        patchelf --add-needed "libui_shim.so" "${2}"
+        ;;
+    vendor/lib/libFNVfbEngineHAL.so)
+        patchelf --add-needed "libui_shim.so" "${2}"
+        ;;
+    # Patch service.bootanim.exit in camera HAL
+    vendor/lib/hw/camera.msm8996.so)
+        sed -i "s/service.bootanim.exit/service.bootanim.zzzz/g" "${2}"
+        ;;
+    # Patch fingerprint blobs for VNDK
+    vendor/bin/gx_fpd)
+        patchelf --remove-needed "libunwind.so" "${2}"
+        patchelf --remove-needed "libbacktrace.so" "${2}"
+        ;;
+    esac
+}
+
 # Default to sanitizing the vendor folder before extraction
 CLEAN_VENDOR=true
 SECTION=
@@ -63,42 +115,5 @@ fi
 setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" false "${CLEAN_VENDOR}"
 
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" ${KANG} --section "${SECTION}"
-
-BLOB_ROOT="${LINEAGE_ROOT}/vendor/${VENDOR}/${DEVICE}/proprietary"
-
-#
-# Load NXP container profiles from vendor
-#
-LIBTFA9890="${BLOB_ROOT}/vendor/lib/libtfa9890.so"
-sed -i "s|/etc/settings/stereo_qcom_spk.cnt|/vendor/etc/tfa/stereo_qc_spk.cnt|g" "${LIBTFA9890}"
-sed -i "s|/etc/settings/mono_qcom_rcv.cnt|/vendor/etc/tfa/mono_qc_rcv.cnt|g" "${LIBTFA9890}"
-sed -i "s|/etc/settings/mono_qcom_spk_l.cnt|/vendor/etc/tfa/mono_qc_spk_l.cnt|g" "${LIBTFA9890}"
-sed -i "s|/etc/settings/mono_qcom_spk_r.cnt|/vendor/etc/tfa/mono_qc_spk_r.cnt|g" "${LIBTFA9890}"
-sed -i "s|/etc/settings/stereo_qcom_spk_l.cnt|/vendor/etc/tfa/stereo_qc_spk_l.cnt|g" "${LIBTFA9890}"
-sed -i "s|/etc/settings/stereo_qcom_spk_r.cnt|/vendor/etc/tfa/stereo_qc_spk_r.cnt|g" "${LIBTFA9890}"
-
-#
-# Correct VZW IMS library location
-#
-QTI_VZW_IMS_INTERNAL="${BLOB_ROOT}/vendor/etc/permissions/qti-vzw-ims-internal.xml"
-sed -i "s|/system/vendor/framework/qti-vzw-ims-internal.jar|/vendor/framework/qti-vzw-ims-internal.jar|g" "${QTI_VZW_IMS_INTERNAL}"
-
-#
-# Correct android.hidl.manager@1.0-java jar name
-#
-QTI_LIBPERMISSIONS="${BLOB_ROOT}/vendor/etc/permissions/qti_libpermissions.xml"
-sed -i "s|name=\"android.hidl.manager-V1.0-java|name=\"android.hidl.manager@1.0-java|g" "${QTI_LIBPERMISSIONS}"
-
-#
-# Remove android.hidl.base@1.0 & android.hidl.manager@1.0
-#
-for HIDL_BASE_LIB in $(grep -lr "android\.hidl\.base@1\.0\.so" ${BLOB_ROOT}); do
-    patchelf --remove-needed android.hidl.base@1.0.so "${HIDL_BASE_LIB}" || true
-done
- for HIDL_MANAGER_LIB in $(grep -lr "android\.hidl\.@1\.0\.so" ${BLOB_ROOT}); do
-    patchelf --remove-needed android.hidl.manager@1.0.so "${HIDL_MANAGER_LIB}" || true
-done
-
-patchelf --replace-needed android.hardware.gnss@1.0.so android.hardware.gnss@1.0-v27.so ${BLOB_ROOT}/vendor/lib64/vendor.qti.gnss@1.0_vendor.so
 
 "${MY_DIR}/setup-makefiles.sh"

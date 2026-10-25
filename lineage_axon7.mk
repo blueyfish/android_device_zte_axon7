@@ -33,10 +33,10 @@ PRODUCT_MODEL := ZTE Axon 7
 PRODUCT_MANUFACTURER := ZTE
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE="ailsa_ii" \
-    PRIVATE_BUILD_DESC="P996A01_O-user 8.0.0 OPR1.170623.032 28 release-keys"
+    PRODUCT_DEVICE="ailsa_ii" \
+    PRIVATE_BUILD_DESC="P996A03_O-user 8.0.0 OPR1.170623.032 520 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "ZTE/P996A01_O/ailsa_ii:8.0.0/OPR1.170623.032/20180815.171922:user/release-keys"
+BUILD_FINGERPRINT := "ZTE/P996A03_O/msm8996:8.0.0/OPR1.170623.032/520:user/release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-zte
