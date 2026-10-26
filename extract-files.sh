@@ -80,6 +80,10 @@ function blob_fixup() {
         patchelf --remove-needed "libunwind.so" "${2}"
         patchelf --remove-needed "libbacktrace.so" "${2}"
         ;;
+    # Patch crashing issue in RIL library
+    vendor/lib64/libril-qc-qmi-1.so)
+        sed -i 's|\xfc\x0f\x1e\xf8\xfd\x7b\x01\xa9|\x00\x00\x80\xd2\xc0\x03\x5f\xd6|' "${2}"
+        ;;
     # Fix soname for Vulkan libraries
     vendor/lib/hw/vulkan.msm8996.so|vendor/lib64/hw/vulkan.msm8996.so)
         patchelf --set-soname "vulkan.msm8996.so" "${2}"
