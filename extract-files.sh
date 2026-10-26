@@ -101,4 +101,7 @@ done
 
 patchelf --replace-needed android.hardware.gnss@1.0.so android.hardware.gnss@1.0-v27.so ${BLOB_ROOT}/vendor/lib64/vendor.qti.gnss@1.0_vendor.so
 
+# Patch crashing issue in RIL library
+sed -i 's|\xfc\x0f\x1e\xf8\xfd\x7b\x01\xa9|\x00\x00\x80\xd2\xc0\x03\x5f\xd6|' ${BLOB_ROOT}/vendor/lib64/libril-qc-qmi-1.so
+
 "${MY_DIR}/setup-makefiles.sh"
