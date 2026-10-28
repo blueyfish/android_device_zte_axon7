@@ -53,10 +53,6 @@ function blob_fixup() {
     vendor/etc/permissions/qti_libpermissions.xml)
         sed -i "s|name=\"android.hidl.manager-V1.0-java|name=\"android.hidl.manager@1.0-java|g" "${2}"
         ;;
-    # Copy and use android.hardware.gnss@1.0.so from v27
-    vendor/lib64/vendor.qti.gnss@1.0_vendor.so)
-        patchelf --replace-needed "android.hardware.gnss@1.0.so" "android.hardware.gnss@1.0-v27.so" "${2}"
-        ;;
     # Shim libbase LogMessage functions
     vendor/bin/imsrcsd)
         patchelf --add-needed "libbase_shim.so" "${2}"
