@@ -26,9 +26,7 @@ cc_library_shared {
 
     srcs: ["GraphicBuffer.cpp"],
     shared_libs: ["libui"],
-    vendor: true,
-
-    compile_multilib: "32",
+    vendor_available: true,
 }
 
 cc_library {

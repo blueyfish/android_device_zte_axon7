@@ -815,7 +815,7 @@ etc/permissions/qti-vzw-ims-internal.xml:vendor/etc/permissions/qti-vzw-ims-inte
 lib64/com.qualcomm.qti.imscmservice@1.0.so|f3f5ae003f520b5e0f02640475cc2adb5cfa2b7b
 lib64/libdiag_system.so|4d2616ea4d6582ac7640e78012ae2eac9d41c53e
 lib64/lib-imscamera.so|3e8c00aaf00be5c34296c65ef7fd8c316eda3c3b
-lib64/lib-imsvideocodec.so|1a7468a4762cdbd9ad9ac642fdf201012b4f8220
+lib64/lib-imsvideocodec.so|1a7468a4762cdbd9ad9ac642fdf201012b4f8220|d6e58045331dce65dabd58d0fa3c82eda8b758ff
 lib64/lib-imsvtextutils.so|4f71ad895e7a76341b5445ab4faa7861a877349f
 lib64/lib-imsvt.so|d24ee8915f66d87805b2ee576a821ee11ef991bb
 lib64/lib-imsvtutils.so|857bb6659020cc19244c3e6791c005fc5b71843a
@@ -824,7 +824,7 @@ lib64/vendor.qti.imsrtpservice@1.0.so|47b03575cf93f607b847d07f6ef6f8e516314260
 lib/com.qualcomm.qti.imscmservice@1.0.so|7b3053e3ad0b467a55a26306bc2dd6eca138a6ae
 lib/libdiag_system.so|ffcb0d604fdf902331b03ef6f8fe2948bfae57a3
 lib/lib-imscamera.so|1fa4dcec45f8e3a3cefeb970e7d5cc419706ce50
-lib/lib-imsvideocodec.so|408408a616e65c276a81572baa2c9eac27530197
+lib/lib-imsvideocodec.so|408408a616e65c276a81572baa2c9eac27530197|4938622350e0298a1204c859fdbbe9fef57bc6fd
 lib/lib-imsvtextutils.so|ad1a0691b60fe6ca97b051533c9a845a5fd25f0d
 lib/lib-imsvtutils.so|d89e8adda28ebf3e14e7245ef6885da790f6f351
 lib/librcc.so|a6ec735f5f2fe9d76411d64338d51741cda47b7a

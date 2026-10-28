@@ -67,10 +67,7 @@ function blob_fixup() {
         patchelf --add-needed "libbase_shim.so" "${2}"
         ;;
     # Shim libui GraphicBuffer lock functions
-    vendor/lib/libZEffectLib.so)
-        patchelf --add-needed "libui_shim.so" "${2}"
-        ;;
-    vendor/lib/libFNVfbEngineHAL.so)
+    lib/lib-imsvideocodec.so|lib64/lib-imsvideocodec.so|vendor/lib/libFNVfbEngineHAL.so|vendor/lib/libZEffectLib.so)
         patchelf --add-needed "libui_shim.so" "${2}"
         ;;
     # Patch service.bootanim.exit in camera HAL
